@@ -37,7 +37,7 @@
 @media only screen and (max-width: 600px) {
   .event-log {
     left: 20px;
-    bottom: 135px;
+    bottom: 80px;
     width: calc(100vw - 20px);
     max-width: 500px;
   }
