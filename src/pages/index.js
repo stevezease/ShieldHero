@@ -7,6 +7,7 @@ import Location from "../components/location";
 import SkillPanel from "../components/skill-panel/skill-panel";
 import EventLog from "../components/event-log/event-log";
 import Help from "../components/help-panel/help";
+import SEO from "../components/seo";
 
 export const ActiveContentContext = React.createContext("SKILL");
 
@@ -33,6 +34,20 @@ const IndexPage = () => {
   };
   return (
     <ActiveContentContext.Provider value={activeContent}>
+      {SEO({
+        description:
+          "An interactive replica of Rising of the Shield Hero Skill tree",
+        lang: "en",
+        meta: "",
+        title: "Shield Hero Skill Tree",
+      })}
+      {SEO({
+        description:
+          "盾の勇者の成り上がりのスキルツリー. An interactive replica of Rising of the Shield Hero Skill tree",
+        lang: "ja",
+        meta: "",
+        title: "盾の勇者スキルツリー Shield Hero Skill Tree",
+      })}
       <div className="body">
         {displayActiveContent(activeContent)}
         <Location />

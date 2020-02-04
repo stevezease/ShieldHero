@@ -35,6 +35,7 @@
   display: flex;
   line-height: 1.5em;
   padding: 5px 0px;
+  margin-right: 5px;
 }
 
 .nav-tab-label {
@@ -59,4 +60,13 @@
 
 .right-bracket {
   transform: scaleX(-1);
+}
+
+@media only screen and (max-width: 600px) {
+  .skill-nav-bar {
+    width: 100vw;
+    max-width: 400px;
+    font-size: 10px;
+    justify-content: flex-start;
+  }
 }

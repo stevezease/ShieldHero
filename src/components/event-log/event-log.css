@@ -33,3 +33,12 @@
 .unlock-log img {
   margin-bottom: 0px;
 }
+
+@media only screen and (max-width: 600px) {
+  .event-log {
+    left: 20px;
+    bottom: 100px;
+    width: calc(100vw - 20px);
+    max-width: 500px;
+  }
+}
