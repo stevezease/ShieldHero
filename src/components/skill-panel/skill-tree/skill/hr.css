@@ -1,0 +1,35 @@
+.animated-horizontal-rule {
+  position: relative;
+  width: 100%;
+}
+
+.animated-horizontal-rule-shell {
+  margin: 0 auto;
+  width: 5px;
+  display: flex;
+  animation: 0.75s linear blurIn both, 0.5s ease-in-out expand 0.75s forwards;
+}
+
+.animated-horizontal-rule-hr {
+  width: 100%;
+  background: white;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.animated-horizontal-rule-circle {
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  background-color: white;
+  margin-top: 5px;
+}
+
+@keyframes expand {
+  0% {
+    width: 5px;
+  }
+  100% {
+    width: 100%;
+  }
+}

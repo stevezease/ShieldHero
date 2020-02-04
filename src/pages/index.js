@@ -1,21 +1,42 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { useState } from "react";
+import ContentWrapper from "../components/content-wrapper";
+import Menu from "../components/menu/menu";
+import "./index.css";
+import Main from "../components/main/main";
+import Location from "../components/location";
+import SkillPanel from "../components/skill-panel/skill-panel";
+import EventLog from "../components/event-log/event-log";
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+export const ActiveContentContext = React.createContext("SKILL");
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+const IndexPage = () => {
+  const [activeContent, setActiveContent] = useState("SKILL");
+  const [eventLog, setEventLog] = useState([]);
+  const displayActiveContent = activePage => {
+    switch (activePage) {
+      case "SKILL":
+        return (
+          <SkillPanel
+            setActiveContent={setActiveContent}
+            pushEvent={event => {
+              setEventLog([...eventLog, event]);
+            }}
+          />
+        );
+      default:
+        return <Main />;
+    }
+  };
+  return (
+    <ActiveContentContext.Provider value={activeContent}>
+      <div className="body">
+        {displayActiveContent(activeContent)}
+        <Location />
+        <Menu setActiveContent={setActiveContent} />
+        <EventLog eventLog={eventLog} setEventLog={setEventLog} />
+      </div>
+    </ActiveContentContext.Provider>
+  );
+};
 
-export default IndexPage
+export default IndexPage;

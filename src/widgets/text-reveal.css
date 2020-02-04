@@ -1,0 +1,20 @@
+.text-reveal {
+  overflow: hidden;
+  width: 0%;
+  animation: TextReveal 1s ease-out both;
+}
+
+.text-reveal-container {
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes TextReveal {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}

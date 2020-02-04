@@ -1,0 +1,14 @@
+.skill-tree {
+  position: relative;
+  overflow: scroll;
+  height: 100vh;
+  width: 100vw;
+}
+
+.skill-tree-container {
+  position: relative;
+}
+
+.audio-element {
+  display: none;
+}

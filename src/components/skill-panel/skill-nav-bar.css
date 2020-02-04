@@ -1,0 +1,62 @@
+.skill-nav-bar {
+  display: flex;
+  color: white;
+  line-height: 1.5em;
+  width: 550px;
+  justify-content: space-around;
+  padding: 10px 10px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+}
+.skill-nav-label {
+  line-height: 1.5em;
+  display: flex;
+  color: hsla(60, 100%, 85%, 0.9);
+  transition: all 0.15s ease-in;
+  cursor: default;
+}
+
+.skill-nav-eng-label {
+  font-size: 0.6em;
+  opacity: 0.8;
+  margin: 0px 10px;
+}
+
+.skill-nav-jp-label {
+  font-size: 1.5em;
+  opacity: 0.8;
+}
+
+.nav-tab {
+  font-size: 0.8em;
+  cursor: pointer;
+  display: flex;
+  line-height: 1.5em;
+  padding: 5px 0px;
+}
+
+.nav-tab-label {
+  transition: all 0.25s linear;
+}
+
+.nav-tab-label:hover {
+  box-shadow: 0px 0px 10px 3px hsla(221, 100%, 50%, 0.4);
+  background: hsla(221, 100%, 50%, 0.3);
+}
+
+.nav-tab.active .nav-tab-label {
+  box-shadow: 0px 0px 10px 3px hsla(221, 100%, 50%, 0.4);
+  background: hsla(221, 100%, 50%, 0.3);
+}
+
+.left-bracket,
+.right-bracket {
+  height: 1.5em;
+  margin-bottom: 0px;
+}
+
+.right-bracket {
+  transform: scaleX(-1);
+}

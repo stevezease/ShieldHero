@@ -1,0 +1,18 @@
+.content-wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.close-window-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  opacity: 0.6;
+  z-index: 10;
+}
+
+.close-window-button:hover {
+  opacity: 1;
+}

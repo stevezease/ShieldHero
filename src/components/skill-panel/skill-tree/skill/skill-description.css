@@ -1,0 +1,195 @@
+.skill-description {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.skill-description-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.shield-description-stat-container {
+  height: 500px;
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -200px 0 0 -300px;
+}
+
+.shield-description-stats {
+  display: flex;
+  height: 210px;
+}
+
+.shield-description-stats-column {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.shield-description-stats-left {
+  width: 24%;
+  /* background: rgba(255, 255, 255, 0.1); */
+  padding-right: 30px;
+}
+
+.shield-description-mixing-recipes {
+  font-size: 14px;
+  text-align: center;
+  min-width: 138px;
+}
+
+.shield-description-stats-secondary {
+  display: flex;
+  flex-direction: row;
+  width: 42%;
+  padding: 0px 15px;
+}
+
+.shield-description-stats-secondary-subcolumn {
+  flex-direction: column;
+  width: 50%;
+  padding: 0px 20px;
+}
+
+.shield-description-stats-right {
+  width: 34%;
+  padding: 0px 15px;
+}
+
+.shield-description-title {
+  display: flex;
+  font-size: 30px;
+  height: 34px;
+  line-height: 34px;
+  font-family: "Noto Serif JP", serif;
+  margin-bottom: 45px;
+}
+
+.shield-description-title-icon {
+  margin-right: 20px;
+}
+
+.stat {
+  display: flex;
+
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.stat-left {
+  display: flex;
+  width: 100px;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.stat-left.primary {
+  width: 100px;
+}
+
+.stat-left.secondary {
+  width: 50px;
+}
+
+.stat-icon {
+  margin-right: 10px;
+}
+
+.shield-description-stats-right-header {
+  display: flex;
+  width: 100%;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 60px;
+}
+
+.shield-description-stats-right-header .div {
+  display: inline-block;
+}
+
+.shield-description-stats-right-header hr {
+  margin-left: 25px;
+  width: calc(100% - 25px);
+  margin-bottom: 7px;
+  margin-top: 7px;
+  background: white;
+}
+
+.shield-description-unlock-conditions {
+  text-align: center;
+  margin: 5px 0px;
+  min-width: 208px;
+}
+
+/* General Button Style */
+.hex-button {
+  position: relative;
+  display: block;
+  background: transparent;
+  min-width: 100px;
+  height: 41px;
+  line-height: 41px;
+  text-align: center;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 7px 25px;
+  cursor: pointer;
+  transition: background 0.25s ease-in-out;
+}
+.hex-button:before,
+.hex-button:after {
+  width: 100%;
+  left: 0px;
+  height: 20px;
+  z-index: -1;
+}
+
+.hex-button:before {
+  position: absolute;
+  content: "";
+  border-bottom: none !important;
+  -webkit-transform: perspective(5px) rotateX(5deg);
+  -moz-transform: perspective(5px) rotateX(5deg);
+  transform: perspective(5px) rotateX(5deg);
+}
+.hex-button:after {
+  position: absolute;
+  top: 24px;
+  content: "";
+  border-top: none !important;
+  -webkit-transform: perspective(5px) rotateX(-5deg);
+  -moz-transform: perspective(5px) rotateX(-5deg);
+  transform: perspective(5px) rotateX(-5deg);
+}
+
+.hex-button:before,
+.hex-button:after {
+  border: 2px solid white;
+}
+
+.hex-button:hover:before,
+.hex-button:hover:after {
+  background: white;
+}
+
+.hex-button:hover {
+  color: black;
+}
+
+.shield-description-footer {
+  display: flex;
+}
+
+.equip-ability {
+  margin-right: 20px;
+}

@@ -1,0 +1,24 @@
+.odometer {
+  display: flex;
+  font-size: 16px;
+}
+
+.odometer-value {
+  font-size: 1em;
+}
+
+.odometer-value.positive {
+  color: #4ae179;
+}
+
+.odometer-value.negative {
+  color: #e14a4a;
+}
+
+.odometer-arrow {
+  width: 10px;
+  font-size: 0.75em;
+  line-height: 1em;
+  margin-left: 0.25em;
+  margin-bottom: 0.25em;
+}

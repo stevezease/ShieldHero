@@ -1,0 +1,57 @@
+.character-hud {
+  color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  font-family: arial;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.character-hud-image {
+  margin: 0px 6px;
+}
+
+.character-hud-title {
+  display: flex;
+  line-height: 1em;
+  justify-content: space-between;
+}
+
+.character-hud-level {
+  font-size: 0.5em;
+}
+
+.character-hud-right {
+  width: 200px;
+}
+
+.character-hud-bars {
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.character-hud-bar {
+  width: 100%;
+  height: 3px;
+  margin-top: 3px;
+  border-radius: 3px;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+.character-hud-bar:hover {
+  filter: saturate(4) brightness(150%);
+}
+
+.character-hud-bar.health {
+  background-color: #976735;
+}
+
+.character-hud-bar.skill {
+  background-color: #49965b;
+}
+
+.character-hud-bar.mana {
+  background-color: #2e5f6d;
+}
