@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ContentWrapper from "../components/content-wrapper";
 import Menu from "../components/menu/menu";
 import "./index.css";
@@ -14,6 +14,9 @@ export const ActiveContentContext = React.createContext("SKILL");
 const IndexPage = () => {
   const [activeContent, setActiveContent] = useState("SKILL");
   const [eventLog, setEventLog] = useState([]);
+  useEffect(() => {
+    window.scrollTo(0, 1);
+  }, []);
   const displayActiveContent = activePage => {
     switch (activePage) {
       case "SKILL":
