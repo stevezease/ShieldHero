@@ -6,6 +6,7 @@ import Main from "../components/main/main";
 import Location from "../components/location";
 import SkillPanel from "../components/skill-panel/skill-panel";
 import EventLog from "../components/event-log/event-log";
+import Help from "../components/help-panel/help";
 
 export const ActiveContentContext = React.createContext("SKILL");
 
@@ -23,6 +24,9 @@ const IndexPage = () => {
             }}
           />
         );
+      case "HELP": {
+        return <Help />;
+      }
       default:
         return <Main />;
     }
