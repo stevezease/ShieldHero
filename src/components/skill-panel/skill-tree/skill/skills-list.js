@@ -50,7 +50,6 @@ export default [
     imageTextObj: {
       text: "O",
       size: "48px",
-      y: "55%",
     },
     stats: {
       ARMOR: 2,
@@ -67,7 +66,6 @@ export default [
     imageTextObj: {
       text: "Y",
       size: "48px",
-      y: "52%",
     },
     stats: {
       ARMOR: 2,
@@ -310,7 +308,6 @@ export default [
     imageTextObj: {
       text: "R",
       size: "48px",
-      y: "53%",
     },
     stats: {
       ARMOR: 4,

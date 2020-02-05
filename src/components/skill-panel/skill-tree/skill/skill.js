@@ -129,7 +129,7 @@ const animationImageText = (
         color={color}
         fill={color}
         fontWeight={fontWeight || "normal"}
-        dominant-baseline="middle"
+        dominant-baseline="central"
         text-anchor="middle"
       >
         {" "}
