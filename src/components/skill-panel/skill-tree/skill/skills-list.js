@@ -444,7 +444,7 @@ export default [
     name: "Energy Shield",
     id: "ENERGY_SHIELD",
     jpName: "エナジーシールド",
-    x: 1250,
+    x: 1300,
     y: 620,
     imageSRC: EnergyShield,
     dependancies: ["ENERGY_NODULE_2"],

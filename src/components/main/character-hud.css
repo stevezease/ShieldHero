@@ -5,7 +5,9 @@
   font-weight: bold;
   padding: 10px;
 }
-
+.character-hud.secondary {
+  padding-right: 50px;
+}
 .character-hud-image {
   margin: 0px 6px;
 }
@@ -16,12 +18,23 @@
   justify-content: space-between;
 }
 
+.secondary .character-hud-title {
+  font-size: 0.75em;
+  line-height: 0.75em;
+}
 .character-hud-level {
   font-size: 0.5em;
 }
 
+.secondary .character-hud-right {
+  width: 125px;
+}
+
 .character-hud-right {
   width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .character-hud-bars {
