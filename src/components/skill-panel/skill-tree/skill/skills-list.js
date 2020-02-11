@@ -1,29 +1,55 @@
-import ShieldIcon from "../../../../images/shield-icon.png";
-import Slave from "../../../../images/slave.png";
-import Mushroom from "../../../../images/shield-icons/mushroom.png";
-import Leaves from "../../../../images/shield-icons/tree-branch.png";
-import Whip from "../../../../images/shield-icons/whip.png";
-import Hide from "../../../../images/shield-icons/animal-hide.png";
-import Steak from "../../../../images/shield-icons/steak.png";
-import BunnyEars from "../../../../images/shield-icons/bunny-ears.png";
-import Raccoon from "../../../../images/shield-icons/raccoon.png";
-import DoubleDog from "../../../../images/shield-icons/double-dog.png";
-import Porcupine from "../../../../images/shield-icons/porcupine.png";
-import AnimalNeedle from "../../../../images/shield-icons/animal-needle.png";
-import Sharpening from "../../../../images/shield-icons/sharpening.png";
-import Pickaxe from "../../../../images/shield-icons/pickaxe.png";
-import Rope from "../../../../images/shield-icons/rope-coil.png";
-import MetalBar from "../../../../images/shield-icons/metal-bar.png";
-import Pipe from "../../../../images/shield-icons/pipe.png";
-import Pikyu from "../../../../images/shield-icons/pikyu.png";
-import Egg from "../../../../images/shield-icons/big-egg.png";
-import Pill from "../../../../images/shield-icons/pill.png";
-import Pine from "../../../../images/shield-icons/pine-tree.png";
-import Salmon from "../../../../images/shield-icons/salmon.png";
-import Butterfly from "../../../../images/shield-icons/butterfly.png";
-import Flask from "../../../../images/shield-icons/round-bottom-flask.png";
-import Cubes from "../../../../images/shield-icons/cubeforce.png";
-import EnergyShield from "../../../../images/shield-icons/energy-shield.png";
+const ShieldIcon =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icon.png";
+const Slave =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/slave.png";
+const Mushroom =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/mushroom.png";
+const Leaves =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/tree-branch.png";
+const Whip =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/whip.png";
+const Hide =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/animal-hide.png";
+const Steak =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/steak.png";
+const BunnyEars =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/bunny-ears.png";
+const Raccoon =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/raccoon.png";
+const DoubleDog =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/double-dog.png";
+const Porcupine =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/porcupine.png";
+const AnimalNeedle =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/animal-needle.png";
+const Sharpening =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/sharpening.png";
+const Pickaxe =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/pickaxe.png";
+const Rope =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/rope-coil.png";
+const MetalBar =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/metal-bar.png";
+const Pipe =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/pipe.png";
+const Pikyu =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/pikyu.png";
+const Egg =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/big-egg.png";
+const Pill =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/pill.png";
+const Pine =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/pine-tree.png";
+const Salmon =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/salmon.png";
+const Butterfly =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/butterfly.png";
+const Flask =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/round-bottom-flask.png";
+const Cubes =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/cubeforce.png";
+const EnergyShield =
+  "https://raw.githubusercontent.com/stevezease/ShieldHero/master/src/images/shield-icons/energy-shield.png";
 
 export default [
   {
