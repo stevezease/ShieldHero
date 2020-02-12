@@ -8,6 +8,8 @@
   color: white;
   font-family: arial;
   font-weight: bold;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .help-box {
