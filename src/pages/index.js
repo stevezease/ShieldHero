@@ -8,6 +8,7 @@ import SkillPanel from "../components/skill-panel/skill-panel";
 import EventLog from "../components/event-log/event-log";
 import Help from "../components/help-panel/help";
 import SEO from "../components/seo";
+import ReactGA from "react-ga";
 
 export const ActiveContentContext = React.createContext("SKILL");
 
@@ -17,6 +18,11 @@ const IndexPage = () => {
   useEffect(() => {
     window.scrollTo(0, 1);
   }, []);
+  const initializeReactGA = () => {
+    ReactGA.initialize("UA-138252539-2");
+    ReactGA.pageview("/index");
+  };
+  initializeReactGA();
   const displayActiveContent = activePage => {
     switch (activePage) {
       case "SKILL":
