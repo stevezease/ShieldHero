@@ -9,6 +9,7 @@ import EventLog from "../components/event-log/event-log";
 import Help from "../components/help-panel/help";
 import SEO from "../components/seo";
 import ReactGA from "react-ga";
+import Helmet from "react-helmet";
 
 export const ActiveContentContext = React.createContext("SKILL");
 
@@ -57,6 +58,12 @@ const IndexPage = () => {
         meta: "",
         title: "盾の勇者スキルツリー Shield Hero Skill Tree",
       })}
+      <Helmet>
+        <meta
+          name="google-site-verification"
+          content="y1aNKIgfPt5Jh2elgSeh0oHEoIqjTNEMYv0xIhC5w1Y"
+        />
+      </Helmet>
       <div className="body">
         {displayActiveContent(activeContent)}
         <Location />
