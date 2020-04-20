@@ -52,11 +52,10 @@ const IndexPage = () => {
         title: "Shield Hero Skill Tree",
       })}
       {SEO({
-        description:
-          "盾の勇者の成り上がりのスキルツリー. An interactive replica of Rising of the Shield Hero Skill tree",
+        description: "盾の勇者の成り上がりのスキルツリー",
         lang: "ja",
         meta: "",
-        title: "盾の勇者スキルツリー Shield Hero Skill Tree",
+        title: "盾の勇者のスキルツリ",
       })}
       <Helmet>
         <meta
